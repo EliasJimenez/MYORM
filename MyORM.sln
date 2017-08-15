@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyORM", "MyORM.csproj", "{0EF90F5E-EF1D-4F36-9DC6-38956BCF4C4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyORMTest", "..\MyORMTest\MyORMTest.csproj", "{4DFC5834-D4ED-4EE2-BD1E-95A8C419CAE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyORMTest", "MyORMTest\MyORMTest.csproj", "{4DFC5834-D4ED-4EE2-BD1E-95A8C419CAE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,16 +24,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://jjimenez.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = MyORM.csproj
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = ..\\MyORMTest\\MyORMTest.csproj
-		SccProjectName2 = ../MyORMTest
-		SccLocalPath2 = ..\\MyORMTest
 	EndGlobalSection
 EndGlobal
