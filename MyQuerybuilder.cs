@@ -66,7 +66,9 @@ namespace MyORM
                     MyAttribute.ForeignKey = p2.GetColumnName();
                 }
 
-                _query.JoinTableParam2 = $"{Querys.FirstOrDefault(t=> t.Table == tipo.GetTableName()).Alias}.{MyAttribute.ForeignKey}";
+                var joinTable = Querys.FirstOrDefault(t => t.Table == tipo.GetTableName());
+                _query.JoinTable = joinTable.Alias;
+                _query.JoinTableParam2 = $"{joinTable.Alias}.{MyAttribute.ForeignKey}";
                 _query.Join = Enum.GetName(typeof(Jointype), MyAttribute.Type);
                 tableIndex++;
 
@@ -195,6 +197,7 @@ namespace MyORM
         public string Join { get; set; }
         public string JoinTableParam1 { get; set; }
         public string JoinTableParam2 { get; set; }
+        public string JoinTable { get; set; }
     }
 
 
